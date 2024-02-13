@@ -3,6 +3,10 @@ import { MovieCard } from "../movie-card/movie-card";
 import { MovieView } from "../movie-view/movie-view";
 import { LoginView } from "../login-view/login-view";
 import { SignupView } from "../signup-view/signup-view";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 
 export const MainView = () => {
   const storedUser = JSON.parse(localStorage.getItem("user"));
@@ -69,23 +73,27 @@ if (!user) {
 }
 
 return (
-  <div>
-    <button onClick={handleLogout}>Logout</button>
+  <Container fluid>
+    <Row className="justify-content-center my-5">    
     {selectedMovie ? (
       <MovieView movie={selectedMovie} onBackClick={() => setSelectedMovie(null)} />
     ) : movies.length === 0 ? (
       <div>The list is empty!</div>
     ) : (
       movies.map((movie) => (
+        <Col xs={12} sm={6} md={3} key={movie._id}>
         <MovieCard
-          key={movie._id}
           movie={movie}
           onMovieClick={(newSelectedMovie) => {
             setSelectedMovie(newSelectedMovie);
           }}
         />
+        </Col>
       ))
     )}
-  </div>
+    
+    <Button onClick={handleLogout} variant="outline-primary" size="sm">Logout</Button>
+    </Row>
+  </Container>
 );
 };

@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
+import "./movie-view.scss";
 
 export const MovieView = ({ movie, onBackClick }) => {
 	return (
 		<div>
 			<div>
-				<img src={movie.ImagePath} alt = "movie cover"/>
+				<img src={movie.ImagePath} alt = {movie.Title}/>
 			</div>
 			<div>
 				<span>Title: </span>
@@ -22,7 +23,13 @@ export const MovieView = ({ movie, onBackClick }) => {
 				<span>Director: </span>
 				<span>{movie.Director.Name}</span>
 			</div>
-			<button onClick={onBackClick}>Back</button>
+			<button 
+			onClick={onBackClick}
+			className="back-button"
+			style={{ cursor: "pointer" }}
+			>
+				Back
+			</button>
 		</div>
 	);
 };
@@ -32,12 +39,12 @@ MovieView.propTypes = {
     Title: PropTypes.string.isRequired,
     Description: PropTypes.string.isRequired,
     Genre: PropTypes.shape({
-      Name: PropTypes.string.isRequired,
+      Name: PropTypes.string.isRequired 
     }),
     Director: PropTypes.shape({
-      Name: PropTypes.string.isRequired,
+      Name: PropTypes.string.isRequired
     }),
-    ImagePath: PropTypes.string.isRequired,
+    ImagePath: PropTypes.string.isRequired
   }).isRequired,
   onBackClick: PropTypes.func.isRequired,
 };
