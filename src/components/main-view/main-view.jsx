@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import './main-view.scss';
 
 export const MainView = () => {
   const storedUser = JSON.parse(localStorage.getItem("user"));
@@ -66,7 +67,9 @@ if (!user) {
           localStorage.setItem("token", token);
         }}
       />
+      <br/>
       or
+      <br/><br/>
       <SignupView />
     </>
   );
@@ -81,7 +84,7 @@ return (
       <div>The list is empty!</div>
     ) : (
       movies.map((movie) => (
-        <Col xs={12} sm={6} md={3} key={movie._id}>
+        <Col xs={12} sm={6} md={4} lg={3} xl={2} key={movie._id}>
         <MovieCard
           movie={movie}
           onMovieClick={(newSelectedMovie) => {
@@ -91,8 +94,11 @@ return (
         </Col>
       ))
     )}
-    
-    <Button onClick={handleLogout} variant="outline-primary" size="sm">Logout</Button>
+    </Row>
+    <Row className="justify-content-center">
+      <Col>
+      <Button onClick={handleLogout} variant="outline-primary" size="sm">Logout</Button>
+      </Col>
     </Row>
   </Container>
 );
