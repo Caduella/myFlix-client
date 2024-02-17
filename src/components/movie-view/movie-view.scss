@@ -1,0 +1,17 @@
+.back-button {
+  padding: 4px 12px 4px 12px;
+  color: whitesmoke;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 4px;
+}
+.moviePoster {
+  width: 400px;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+}
+
+.movie-infos{
+  padding:20px
+}
