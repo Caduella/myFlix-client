@@ -12,6 +12,8 @@ import { Link } from "react-router-dom";
 // The MovieCard function component
 export const MovieCard = ({ movie, user, token, setUser}) => { 
   const [isFavorite, setIsFavorite] = useState(false);
+  const userURL = "https://myquickmovieapi.onrender.com/users/";
+  const userMoviesURL = `${userURL}${user.Username}/movies/${movie._id}`;
 
   useEffect(() => {
     console.log(user);
@@ -23,7 +25,7 @@ export const MovieCard = ({ movie, user, token, setUser}) => {
   const addFavoriteMovie = () => {
     console.log("called addfavmovies");
     fetch(
-      `https://myquickmovieapi.onrender.com/users/${user.Username}/movies/${movie._id}`,
+      userMoviesURL,
       { method: "POST", headers: { Authorization: `Bearer ${token}` } }
     )
       .then((response) => {
@@ -51,7 +53,7 @@ export const MovieCard = ({ movie, user, token, setUser}) => {
     console.log("called removefavmovies");
 
     fetch(
-      `https://myquickmovieapi.onrender.com/users/${user.Username}/movies/${movie._id}`,
+      userMoviesURL,
       { method: "DELETE", headers: { Authorization: `Bearer ${token}` } }
     )
       .then((response) => {

@@ -19,11 +19,12 @@ export const MainView = () => {
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [search, setSearch] = useState("");
   const [filteredMovies, setFilteredMovies] = useState([]);
-   
+  const moviesURL = "https://myquickmovieapi.onrender.com/movies"
+
   useEffect(() => {
     if (!token) return;
 
-    fetch("https://myquickmovieapi.onrender.com/movies", {
+    fetch(moviesURL, {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then((response) => response.json())

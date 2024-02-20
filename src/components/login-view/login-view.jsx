@@ -10,7 +10,8 @@ import Row from "react-bootstrap/Row";
 export const LoginView = ({onLoggedIn}) => {
   const [username, setUsername] = useState ("");
   const [password, setPassword] = useState ("");
-  
+  const loginURL = "https://myquickmovieapi.onrender.com/login"
+
   const handleSubmit = (event) => {
     // this prevents the default behavior of the form which is to reload the entire page
     event.preventDefault();
@@ -19,8 +20,8 @@ export const LoginView = ({onLoggedIn}) => {
       Username: username,
       Password: password
     };
-
-    fetch("https://myquickmovieapi.onrender.com/login", {
+   
+    fetch(loginURL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

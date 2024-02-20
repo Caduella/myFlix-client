@@ -11,7 +11,8 @@ export const SignupView = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [birthday, setBirthday] = useState("");
-
+  const signupURL = "https://myquickmovieapi.onrender.com/signup"
+  
   const handleSubmit = (event) => {
    event.preventDefault();
 
@@ -22,7 +23,7 @@ export const SignupView = () => {
       Birthday: birthday
     };
 
-    fetch("https://myquickmovieapi.onrender.com/signup", {
+    fetch(signupURL, {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
