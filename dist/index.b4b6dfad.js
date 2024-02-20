@@ -36660,7 +36660,7 @@ const MovieView = ({ movies })=>{
             }, void 0, false, {
                 fileName: "src/components/movie-view/movie-view.jsx",
                 lineNumber: 22,
-                columnNumber: 3
+                columnNumber: 2
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _rowDefault.default), {
                 className: "my-5 justify-content-md-center",
@@ -36681,12 +36681,12 @@ const MovieView = ({ movies })=>{
                         }, void 0, false, {
                             fileName: "src/components/movie-view/movie-view.jsx",
                             lineNumber: 25,
-                            columnNumber: 5
+                            columnNumber: 4
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/movie-view/movie-view.jsx",
                         lineNumber: 24,
-                        columnNumber: 4
+                        columnNumber: 3
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _colDefault.default), {
                         md: 8,
@@ -36702,7 +36702,7 @@ const MovieView = ({ movies })=>{
                                         }, void 0, false, {
                                             fileName: "src/components/movie-view/movie-view.jsx",
                                             lineNumber: 32,
-                                            columnNumber: 8
+                                            columnNumber: 5
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardDefault.default).Text, {
                                             className: "h6",
@@ -36712,8 +36712,8 @@ const MovieView = ({ movies })=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/movie-view/movie-view.jsx",
-                                            lineNumber: 34,
-                                            columnNumber: 8
+                                            lineNumber: 33,
+                                            columnNumber: 5
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "my-1",
@@ -36723,21 +36723,21 @@ const MovieView = ({ movies })=>{
                                                     children: "Director: "
                                                 }, void 0, false, {
                                                     fileName: "src/components/movie-view/movie-view.jsx",
-                                                    lineNumber: 38,
-                                                    columnNumber: 8
+                                                    lineNumber: 36,
+                                                    columnNumber: 6
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: movie.Director.Name
                                                 }, void 0, false, {
                                                     fileName: "src/components/movie-view/movie-view.jsx",
-                                                    lineNumber: 39,
-                                                    columnNumber: 8
+                                                    lineNumber: 37,
+                                                    columnNumber: 6
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/movie-view/movie-view.jsx",
-                                            lineNumber: 37,
-                                            columnNumber: 6
+                                            lineNumber: 35,
+                                            columnNumber: 5
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "my-1",
@@ -36747,21 +36747,21 @@ const MovieView = ({ movies })=>{
                                                     children: "Director Bio: "
                                                 }, void 0, false, {
                                                     fileName: "src/components/movie-view/movie-view.jsx",
-                                                    lineNumber: 42,
-                                                    columnNumber: 8
+                                                    lineNumber: 40,
+                                                    columnNumber: 6
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: movie.Director.Bio
                                                 }, void 0, false, {
                                                     fileName: "src/components/movie-view/movie-view.jsx",
-                                                    lineNumber: 43,
-                                                    columnNumber: 8
+                                                    lineNumber: 41,
+                                                    columnNumber: 6
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/movie-view/movie-view.jsx",
-                                            lineNumber: 41,
-                                            columnNumber: 6
+                                            lineNumber: 39,
+                                            columnNumber: 5
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "my-1",
@@ -36771,21 +36771,21 @@ const MovieView = ({ movies })=>{
                                                     children: "Genre: "
                                                 }, void 0, false, {
                                                     fileName: "src/components/movie-view/movie-view.jsx",
-                                                    lineNumber: 46,
-                                                    columnNumber: 8
+                                                    lineNumber: 44,
+                                                    columnNumber: 6
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: movie.Genre.Name
                                                 }, void 0, false, {
                                                     fileName: "src/components/movie-view/movie-view.jsx",
-                                                    lineNumber: 47,
-                                                    columnNumber: 8
+                                                    lineNumber: 45,
+                                                    columnNumber: 6
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/movie-view/movie-view.jsx",
-                                            lineNumber: 45,
-                                            columnNumber: 6
+                                            lineNumber: 43,
+                                            columnNumber: 5
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
@@ -36803,30 +36803,30 @@ const MovieView = ({ movies })=>{
                                         children: "Back"
                                     }, void 0, false, {
                                         fileName: "src/components/movie-view/movie-view.jsx",
-                                        lineNumber: 51,
-                                        columnNumber: 7
+                                        lineNumber: 49,
+                                        columnNumber: 6
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/movie-view/movie-view.jsx",
-                                    lineNumber: 50,
-                                    columnNumber: 6
+                                    lineNumber: 48,
+                                    columnNumber: 5
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/movie-view/movie-view.jsx",
                             lineNumber: 30,
-                            columnNumber: 5
+                            columnNumber: 4
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/movie-view/movie-view.jsx",
                         lineNumber: 29,
-                        columnNumber: 4
+                        columnNumber: 3
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/movie-view/movie-view.jsx",
                 lineNumber: 23,
-                columnNumber: 3
+                columnNumber: 2
             }, undefined)
         ]
     }, void 0, true);

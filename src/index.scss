@@ -1,9 +1,9 @@
-@import '~bootstrap/scss/bootstrap.scss';
-
 $primary: BlueViolet;
 $secondary: lightpink;
 $body-bg: Ivory;
-$secondary:white;
+
+
+@import '~bootstrap/scss/bootstrap.scss';
 
 .card-custom{
     background-color: rgb(188, 231, 255) ;
