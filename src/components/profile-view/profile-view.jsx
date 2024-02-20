@@ -8,7 +8,7 @@ export const ProfileView = ({ user, token, movies, setUser }) => {
     const [password, setPassword] = useState(user.password)
     const [email, setEmail] = useState(user.email)
     const [birthday, setBirthday] = useState(user.birthday)
-    const userURL = "https://myquickmovieapi.onrender.com/users"
+    // const userURL = "https://myquickmovieapi.onrender.com/users"
 
     const favMov = user.FavoriteMovies ? movies.filter((movie) => user.FavoriteMovies.includes(movie._id)) : [];
 
@@ -22,10 +22,8 @@ export const ProfileView = ({ user, token, movies, setUser }) => {
           Email: email,
           Birthday: birthday,
         }
-
-
         
-      fetch(`${userURL}${username}` , {   
+      fetch(`https://myquickmovieapi.onrender.com/users/${username}`, {   
 			method: "PUT",
 			body: JSON.stringify(data),
 			headers: {
@@ -53,7 +51,7 @@ export const ProfileView = ({ user, token, movies, setUser }) => {
 
 
     const handleDelete = () => {
-		fetch(`${userURL}${username}`, {
+		fetch(`https://myquickmovieapi.onrender.com/users/${username}`, {
 			method: "DELETE",
 			headers: {
 				Authorization: `Bearer ${token}`
