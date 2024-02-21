@@ -74,8 +74,7 @@ export const LoginView = ({onLoggedIn}) => {
               <br/>
               <Button
                 variant="primary"
-                type="submit"
-                // onClick={handleSubmit}
+                type="submit"               
                 className="text-white"
               >
                 Submit

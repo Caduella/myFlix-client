@@ -4,11 +4,11 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 export const ProfileView = ({ user, token, movies, setUser }) => {
 
-    const [username, setUsername] = useState(user.name)
-    const [password, setPassword] = useState(user.password)
-    const [email, setEmail] = useState(user.email)
-    const [birthday, setBirthday] = useState(user.birthday)
-    // const userURL = "https://myquickmovieapi.onrender.com/users"
+    const [username, setUsername] = useState("")
+    const [password, setPassword] = useState("")
+    const [email, setEmail] = useState("")
+    const [birthday, setBirthday] = useState("")
+  
 
     const favMov = user.FavoriteMovies ? movies.filter((movie) => user.FavoriteMovies.includes(movie._id)) : [];
 
@@ -23,7 +23,7 @@ export const ProfileView = ({ user, token, movies, setUser }) => {
           Birthday: birthday,
         }
         
-      fetch(`https://myquickmovieapi.onrender.com/users/${username}`, {   
+      fetch(`https://myquickmovieapi.onrender.com/users/${user.Username}`, {   
 			method: "PUT",
 			body: JSON.stringify(data),
 			headers: {
@@ -51,7 +51,7 @@ export const ProfileView = ({ user, token, movies, setUser }) => {
 
 
     const handleDelete = () => {
-		fetch(`https://myquickmovieapi.onrender.com/users/${username}`, {
+		fetch(`https://myquickmovieapi.onrender.com/users/${user.Username}`, {
 			method: "DELETE",
 			headers: {
 				Authorization: `Bearer ${token}`
