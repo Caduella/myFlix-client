@@ -15,8 +15,7 @@ export const MainView = () => {
   const storedToken = localStorage.getItem("token");
   const [user, setUser] = useState(storedUser? storedUser : null);
   const [token, setToken] = useState(storedToken? storedToken : null);
-  const [movies, setMovies] = useState([]);
-  const [selectedMovie, setSelectedMovie] = useState(null);
+  const [movies, setMovies] = useState([]); 
   const [search, setSearch] = useState("");
   const [filteredMovies, setFilteredMovies] = useState([]);
   const moviesURL = "https://myquickmovieapi.onrender.com/movies"
@@ -140,7 +139,7 @@ export const MainView = () => {
                       <ProfileView
                        user={user}
                        token={token}
-                       setUser={setUser}
+                       setUser={(updatedUser) => setUser(updatedUser)}
                         movies={movies}
                         onDelete={() => {
                           setUser(null);
