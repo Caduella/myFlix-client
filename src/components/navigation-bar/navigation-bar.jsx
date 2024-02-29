@@ -6,7 +6,7 @@ import Form from "react-bootstrap/Form";
 export const NavigationBar = ({ user, onLoggedOut, movies, search, setSearch}) => {
 
   return (
-    <Navbar bg="secondary" expand="lg" fixed="top">
+    <Navbar bg="secondary" expand="lg" fixed="top" className="mb-5">
       <Container>
         <Navbar.Brand as={Link} to="/">
           My Quick Movies
