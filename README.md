@@ -1,7 +1,7 @@
 # myFlix Client App
 This client-side app is written in React, based on its existing server-side code (REST API and dtatabase).
 
-# Essential Features
+## Essential Features
 - Returns all movies to the user (each movie item with an image, title, and description)
 - Filters the list of movies with a "search" feature
 - Ability to select a movie for more details
@@ -20,7 +20,7 @@ This client-side app is written in React, based on its existing server-side code
 
 
 
-# Technical Requirements
+## Technical Requirements
 - The application is a single-page application (SPA)
 - The application uses state routing to navigate between views and share URLs
 - The application gives users the option to filter moviews using a "search" feature
@@ -31,9 +31,11 @@ This client-side app is written in React, based on its existing server-side code
 - The application is hosted online
 - The application uses REact REdux for state management of at least one feature (i.e. filtering movies)
 
-# API Hosted: https://myquickmovieapi.onrender.com
+## API Hosted: https://myquickmovieapi.onrender.com
 
-# Dependencies
+## Link to App: https://myquickmovies.netlify.app
+
+## Dependencies
 
 List of dependencies can be found under package.json file
 

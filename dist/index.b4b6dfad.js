@@ -37833,7 +37833,7 @@ const NavigationBar = ({ user, onLoggedOut, movies, search, setSearch })=>{
         bg: "secondary",
         expand: "lg",
         fixed: "top",
-        className: "mb-5",
+        className: "mb-7",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Container), {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactBootstrap.Navbar).Brand, {
