@@ -1,5 +1,18 @@
 # myFlix Client App
-This client-side app is written in React, based on its existing server-side code (REST API and dtatabase).
+
+## Description
+This application is where users can create an account, view all the movies, check the movie description, director and genre information and choose to add or delete a movie into the favorite movie list.
+The user can update their information or cancel the account.
+This client-side app is written in React, based on its existing server-side code (REST API and dtatabase). 
+
+## Link to the App
+https://myquickmovies.netlify.app
+
+## API Hosted
+https://myquickmovieapi.onrender.com
+
+## Screenshot of the App
+![App Screenshot](myFlix-client-view.png)
 
 ## Essential Features
 - Returns all movies to the user (each movie item with an image, title, and description)
@@ -18,8 +31,6 @@ This client-side app is written in React, based on its existing server-side code
 - Returns data about a genre, with a name and description
 - Returns data about a director (name, bio, birth year, death year)
 
-
-
 ## Technical Requirements
 - The application is a single-page application (SPA)
 - The application uses state routing to navigate between views and share URLs
@@ -31,13 +42,16 @@ This client-side app is written in React, based on its existing server-side code
 - The application is hosted online
 - The application uses REact REdux for state management of at least one feature (i.e. filtering movies)
 
-## API Hosted: https://myquickmovieapi.onrender.com
-
-## Link to App: https://myquickmovies.netlify.app
-
 ## Dependencies
-
-List of dependencies can be found under package.json file
-
+		bootstrap
+    prop-types
+    react
+    react-bootstrap
+    react-dom
+    react-router
+    react-router-dom
+		@parcel/transformer-sass
+    parcel
+    process
 
 
